@@ -12,15 +12,28 @@
         <h2>Register form</h2>
     </div>
 
-    <form method="post" action="register.php">
-        <?php include('errors.php'); ?>
+    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+        <?php //include('errors.php'); 
+        ?>
+        <div class="input-group">
+            <label>First Name</label>
+            <input type="last_name" name="first_name">
+        </div>
+        <div class="input-group">
+            <label>Last Name</label>
+            <input type="last_name" name="last_name">
+        </div>
         <div class="input-group">
             <label>Username</label>
-            <input type="text" name="username" value="<?php echo $username; ?>">
+            <input type="username" name="username">
         </div>
         <div class="input-group">
             <label>Email</label>
-            <input type="email" name="email" value="<?php echo $email; ?>">
+            <input type="email" name="email">
+        </div>
+        <div class="input-group">
+            <label>Phone</label>
+            <input type="phone" name="phone">
         </div>
         <div class="input-group">
             <label>Password</label>
@@ -38,4 +51,5 @@
         </p>
     </form>
 </body>
+
 </html>
