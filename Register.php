@@ -1,4 +1,5 @@
-<?php include('configDB.php') ?>
+<?php 
+include('configDB.php') ?>
 <!DOCTYPE html>
 <html>
 
@@ -13,7 +14,7 @@
     </div>
 
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-        <?php //include('errors.php'); 
+        <?php include('errors.php'); 
         ?>
         <div class="input-group">
             <label>First Name</label>
